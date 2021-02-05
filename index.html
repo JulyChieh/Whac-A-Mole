@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="og:description"  content="新年快樂~~~">
+    <meta name="og:image"  content="http://webgis.geo.ntnu.edu.tw/member/amon/festival/CNY/img/gold.png">
+    <!-- <meta name="viewport" content="target-densitydpi=640,width=1080,user-scalable=no"> -->
+    <title>打鼠不打牛</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="mole.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Potta+One&amp;display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFYLJER5QP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QFYLJER5QP');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <pre class="intro">
+            Hit rats.
+            Do NOT hit cattles.
+        </pre>
+        <button id="start">start</button>
+        <div class="row rowh">
+            
+            <div class="col ">
+                <p>
+                    <sapn id="counts">15 sec</span>
+                </p>
+            </div>
+            <div class="col right-col">
+                <p class='score-style'>
+
+                    score:
+                    <input id="score-vl" type="hidden" value='0'></input>
+                    <span id="score">0</span>
+                </p>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="container" style="width: 900px;">
+        <div id="QQ" class='egg' style="display:none;" >
+            <img class="egg-img" src="./img/sad-cow.png" >
+            <p class="egg-text-1" >牛年要到了~不要打我嘛~TAT</p>
+        </div>
+        <div id="OK" class='egg' style="display:none; color:rgb(228, 167, 0);" >
+            <img  class="egg-img" src="./img/happy-cow.png" >
+            <p class="egg-text-2">耶耶~牛年快樂~~~</p>
+        </div>
+        <div id="mask" class='egg' style="display:none; color:rgb(245, 67, 12);" >
+            <img class="egg-img" src="./img/mask-cow.png" >
+            <p class="egg-text-3">新年快樂~~~</p>
+        </div>
+    </div>
+    <div class="container" style="width: 900px;text-align: center;">
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+        <div class="hole nine">
+            <div >
+                <img src="./img/mouse.png" class="rat" style="display:none; cursor: pointer;">
+                <img src="./img/sacred-cow.png" class="cow" style="display:none; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+    
+    <div style="height:150px;"></div>
+    
+    <footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <!-- © 2021 Copyright -->
+        <p> © 2021 Copyright    &emsp;&emsp; source:
+        <a  href="https://fonts.google.com/">Google Fonts</a> |
+        <a  href="https://getbootstrap.com/">Bootstrap</a> |
+        <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a> |
+        <a href="http://www.counter4me.com">Counter4me</a> |
+        <!-- Counter Code START -->
+        <img src="http://www.counter4me.com/services/imagedigits/counter.php?aut=c81e490faeeb25cc5484ffcb5720100455435c37a775a04b2308659286a40ab5c90962f5149f5d84c333314b7b88da677931467d78cb383f3c79c13790f16a5efca52e3ac4cc545157a2e07adb0484ed8f5833140e1e46042d" alt="free counter " border="0" />
+        <!-- Counter Code END -->
+        </p>
+        
+    </div>
+    <!-- Copyright -->
+    </footer>
+
+</body>
+<script src="mole.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="mole.css">
+
+</html>
